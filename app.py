@@ -12,7 +12,7 @@ def sum_product():
     file_name = data['file']
     product = data['product']
     
-    # Construct the file path relative to the current directory
+    # Construct the file path relative to current directory
     file_path = os.path.join('../data', file_name)
     # Check if the file exists
     if not os.path.exists(file_path):
