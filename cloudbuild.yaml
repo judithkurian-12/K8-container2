@@ -1,4 +1,4 @@
-t# steps:
+# steps:
 #   # Step 1: Build Container 1
 #   - name: 'gcr.io/cloud-builders/docker'
 #     args: ['build', '-t', 'gcr.io/dbms-lab-414417/container1', './container1']
