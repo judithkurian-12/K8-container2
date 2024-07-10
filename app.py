@@ -13,7 +13,7 @@ def sum_product():
     product = data['product']
     
     # Construct the file path relative to current directory
-    file_path = os.path.join('/app/data', file_name)
+    file_path = os.path.join('/judith_PV_dir', file_name)
     # Check if the file exists
     if not os.path.exists(file_path):
         return jsonify(OrderedDict([("error", "File not found."), ("file", file_name)]))
@@ -26,7 +26,6 @@ def sum_product():
             try:
                 header = next(reader)
             except Exception:
-                print("Reached")
                 return jsonify(OrderedDict([("error", "Input file not in CSV format."), ("file", file_name)]))
             
             # Check if the header contains 'product' and 'amount'
