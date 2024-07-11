@@ -13,7 +13,7 @@ def sum_product():
     product = data['product']
     
     # Construct the file path relative to current directory
-    file_path = os.path.join('/judith_PV_dir', file_name)
+    file_path = os.path.join('/judith_PV_dir/', file_name)
     # Check if the file exists
     if not os.path.exists(file_path):
         return jsonify(OrderedDict([("error", "File not found."), ("file", file_name)]))
