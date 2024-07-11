@@ -11,7 +11,6 @@ def sum_product():
     data = request.json
     file_name = data['file']
     product = data['product']
-    print("entered service 2")
     
     # Construct the file path relative to current directory
     file_path = os.path.join('/judith_PV_dir', file_name)
