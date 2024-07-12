@@ -57,5 +57,4 @@ images:
   - 'us-central1-docker.pkg.dev/dbms-lab-414417/microservice2/service2:latest'
 
 logsBucket: "gs://cloudrunlogsjk"
-
-serviceAccount: "k8-assignment@dbms-lab-414417.iam.gserviceaccount.com"
+serviceAccount: "955032749416-compute@developer.gserviceaccount.com"
