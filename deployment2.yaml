@@ -37,6 +37,6 @@ spec:
     app: my-deployment
   ports:
     - protocol: TCP
-      port: 7000
+      port: 80
       targetPort: 7000
   type: ClusterIP
