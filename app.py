@@ -63,7 +63,7 @@ import csv
 import re
 
 app = Flask(__name__)
-port = 8000
+port = 7000
 
 @app.route('/calculate', methods=['POST'])
 def calculate():
