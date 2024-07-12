@@ -76,7 +76,6 @@ def calculate():
         file_path = os.path.join("/judith_PV_dir", fileName)
         print('filepath in container2', file_path)
         #return jsonify({"file": fileName, "path exists": os.path.exists(file_path)})
-        #return jsonify(response.json())
         with open(file_path, 'r') as file:
             sum = 0
             for line_number, line in enumerate(file, start=2):
