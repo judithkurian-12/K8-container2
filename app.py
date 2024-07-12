@@ -73,7 +73,6 @@ def calculate():
         inputProduct = inputJSON.get('product')
         print(fileName, inputProduct)
         #parent_dir = os.path.dirname(app.root_path)  # Get the parent directory of the application root
-        #data_dir = os.path.join(parent_dir, 'data')  # Get the path to the 'data' directory
         file_path = os.path.join("/judith_PV_dir", fileName)
         print('filepath in container2', file_path)
         #return jsonify({"file": fileName, "path exists": os.path.exists(file_path)})
