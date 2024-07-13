@@ -12,9 +12,7 @@ def calculate():
         inputJSON = request.json;
         fileName = inputJSON.get('file')
         inputProduct = inputJSON.get('product')
-        print(fileName, inputProduct)
         file_path = os.path.join("/judith_PV_dir", fileName)
-        print('filepath in container2', file_path)
         with open(file_path, 'r') as file:
             sum = 0
             for line_number, line in enumerate(file, start=2):
@@ -25,7 +23,6 @@ def calculate():
                     product, amount = parts
                     if product == inputProduct:
                         sum += int(amount.strip())
-            print('file', fileName, 'sum', sum)
             return jsonify({"file": fileName, "sum": sum})
     except:
         return jsonify({"file": fileName, "error": "Input file not in CSV format."})
